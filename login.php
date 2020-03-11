@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])){
+    header('location:home.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +27,7 @@
                      <label for="inputEmail4">Username</label>
                      <input type="text" name="username" class="form-control" id="inputEmail4" placeholder="Username" required>
                      <div class="invalid-feedback">
-                      Enter a valid email.
+                      Incorrect Username.
                      </div>
                    </div>
                    <div class="form-group col-md-12">
