@@ -17,5 +17,5 @@
 	$conn->query($sql);
 
 	$_SESSION['username']= $username;
-	header('location:home.php');
+	header('location:../view/home.php');
 ?>

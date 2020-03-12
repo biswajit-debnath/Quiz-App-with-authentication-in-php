@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])){
-    header('location:home.php');
+    header('location:view/home.php');
   }
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
           </div>
 <!--           <h3 class="text-center mb-2 font-weight-normal">Sign-UP</h3> -->
           <div class="card col-lg-6 m-auto p-lg-3 p-md-1">
-               <form action="register.php" method="post" class="needs-validation" novalidate >
+               <form action="processing/register.php" method="post" class="needs-validation" novalidate >
                  <div class="form-row">
                    <div class="form-group col-md-6">
                      <label for="inputEmail4">Email</label>
@@ -84,7 +84,7 @@
                  </div>
                 </div>
                  <button type="submit" class="btn btn-primary">Sign Up</button>
-                 <span class="ml-2">Already signup? <a href="login.php">Login Instead</a><span>
+                 <span class="ml-2">Already signup? <a href="view/login.php">Login Instead</a><span>
                </form>    
           </div>
      </div>     
