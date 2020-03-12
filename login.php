@@ -21,7 +21,7 @@
           </div>
 <!--           <h3 class="text-center mb-2 font-weight-normal">Sign-UP</h3> -->
           <div class="card col-lg-5 m-auto p-lg-3 p-md-1">
-               <form action="register.php" method="POST" class="needs-validation" novalidate>
+               <form action="validate.php" method="POST" class="needs-validation" novalidate>
                  <div class="form-row">
                    <div class="form-group col-md-12">
                      <label for="inputEmail4">Username</label>
